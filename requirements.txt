@@ -1,0 +1,6 @@
+# NLP tiếng Việt
+underthesea==6.8.0
+
+# Phân tích thời gian tự nhiên
+dateparser==1.1.8
+python-dateutil==2.9.0.post0
