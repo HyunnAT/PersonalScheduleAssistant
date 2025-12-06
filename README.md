@@ -4,7 +4,6 @@ Personal Schedule Assistant: Ứng dụng hỗ trợ quản lý lịch cá nhân
    Personal Schedule Assistant cho phép người dùng nhập câu lệnh tiếng Việt tự nhiên để tạo, chỉnh sửa, xóa và nhắc lịch tự động. Hệ thống tự động phân tích câu lệnh để trích xuất thông tin sự kiện như nội dung, thời gian, địa điểm và thời gian nhắc trước.
 
 2. Chức năng chính
-
 2.1 Xử lý ngôn ngữ tự nhiên (NLP)
 -Tự động trích xuất thời gian, ngày, địa điểm, nhắc trước, thời gian kết thúc.
 -Hỗ trợ nhiều dạng biểu đạt thời gian
@@ -35,31 +34,12 @@ Personal Schedule Assistant: Ứng dụng hỗ trợ quản lý lịch cá nhân
    -Threading: Tạo bộ nhắc lịch chạy nền, kiểm tra sự kiện định kỳ.
    -winsound (Windows): Tạo âm báo khi đến giờ nhắc nhở.
    -Datetime & Timezone Utilities: Chuyển đổi và quản lý đối tượng ngày/giờ một cách nhất quán.
-4. Kiến trúc hệ thống
-   src/
-   ├─ nlp/
-   │ ├─ preprocessing.py # Phân đoạn từ và tiền xử lý
-   │ ├─ ner.py # Nhận diện thực thể
-   │ ├─ rules.py # Trích tên sự kiện, nhắc nhở
-   │ ├─ time_parsing.py # Phân tích thời gian
-   │ └─ engine.py # Lưu sự kiện
-   │
-   ├── storage/
-   │ └── db.py # Tương tác SQLite
-   │
-   ├── reminder/
-   │ └── scheduler.py # Bộ nhắc lịch tự động
-   │
-   ├── ui/
-   │ └── main_window.py # Giao diện Tkinter
-   │
-   └── app.py # File chạy chính
 
-5. Cài đặt và chạy
+4. Cài đặt và chạy
    -Cài thư viện: pip install -r requirements.txt
    -Chạy ứng dụng: python app.py
 
-6. Bộ kiểm thử NLP
+5. Bộ kiểm thử NLP
    -Ứng dụng được kiểm thử với bộ 30 test case bao gồm:
    -Câu có dấu / không dấu
    -Thời gian dạng giờ, phút, ngày, tuần
@@ -68,7 +48,7 @@ Personal Schedule Assistant: Ứng dụng hỗ trợ quản lý lịch cá nhân
    -Câu lệnh đa cấu trúc
    -Mục tiêu độ chính xác ≥ 80%.
 
-7. Hạn chế
+6. Hạn chế
    -Chưa xử lý câu quá phức tạp mang tính điều kiện hoặc mơ hồ.
    -Location chủ yếu dựa vào rule-based.
    -Nhắc lịch chỉ chạy khi ứng dụng đang mở.
