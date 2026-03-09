@@ -25,10 +25,9 @@ Personal Schedule Assistant: Ứng dụng hỗ trợ quản lý lịch cá nhân
 - Cài thư viện: pip install -r requirements.txt
 - Chạy ứng dụng: python src/app.py
 
-5. Bộ kiểm thử NLP: Ứng dụng được kiểm thử với bộ 30 test case bao gồm:
+5. Bộ kiểm thử NLP:
 - Câu có dấu / không dấu
 - Thời gian dạng giờ, phút, ngày, tuần
-- Trường hợp có end_time và không có end_time
 - Nhắc trước bằng phút hoặc giờ
 - Câu lệnh đa cấu trúc
 - Mục tiêu độ chính xác ≥ 80%.
